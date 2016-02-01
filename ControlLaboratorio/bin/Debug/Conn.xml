@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Conn>
+    <Usuario>Andre</Usuario>
+    <Senha>andredealc</Senha>
+    <Banco>CONTROLLABORATORIO</Banco>
+    <Servidor>NOTEBOOK\SQLEXPRESS</Servidor>
+    <TipoBanco>SQLSERVER</TipoBanco>
+  </Conn>
+</DocumentElement>

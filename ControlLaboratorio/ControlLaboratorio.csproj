@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C59A8EA-C4D1-45C0-9A5C-45560D3D0260}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlLaboratorio</RootNamespace>
+    <AssemblyName>ControlLaboratorio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraGrid.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\FirebirdSql.Data.FirebirdClient\2.0.0.0__3750abcc3150b00c\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AtualizacaoBanco.cs" />
+    <Compile Include="Classes\Conexao.cs" />
+    <Compile Include="Classes\Registros.cs" />
+    <Compile Include="FormAgendaLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgendaLab.Designer.cs">
+      <DependentUpon>FormAgendaLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAguarde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAguarde.Designer.cs">
+      <DependentUpon>FormAguarde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEnt.Designer.cs">
+      <DependentUpon>FormEnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIni.Designer.cs">
+      <DependentUpon>FormIni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaboratorio.Designer.cs">
+      <DependentUpon>FormLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfessor.Designer.cs">
+      <DependentUpon>FormProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaboratorioCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaboratorioCad.Designer.cs">
+      <DependentUpon>FormLaboratorioCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfessorCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfessorCad.Designer.cs">
+      <DependentUpon>FormProfessorCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuariosCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuariosCad.Designer.cs">
+      <DependentUpon>FormUsuariosCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgendaLab.resx">
+      <DependentUpon>FormAgendaLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAguarde.resx">
+      <DependentUpon>FormAguarde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEnt.resx">
+      <DependentUpon>FormEnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIni.resx">
+      <DependentUpon>FormIni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaboratorio.resx">
+      <DependentUpon>FormLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfessor.resx">
+      <DependentUpon>FormProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaboratorioCad.resx">
+      <DependentUpon>FormLaboratorioCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfessorCad.resx">
+      <DependentUpon>FormProfessorCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuariosCad.resx">
+      <DependentUpon>FormUsuariosCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoEnt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
